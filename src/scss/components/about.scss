@@ -1,0 +1,57 @@
+.content{
+	padding: 10px 0px;
+	background:transparent url('../img/background__cycles.svg') left top;
+	background-size: cover;
+}
+.presale-banner{
+	@extend .wrapper;
+	margin-top: 164px;
+	border-radius: 16px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 20px;
+	padding-left: 85px;
+	background-image: $blue-gradient;
+	position: relative;
+	box-sizing: border-box;
+
+}
+.presale__title{
+	font-weight: 700;
+	margin: 0;
+	color: #fff;
+
+	span:first-child{
+		margin-right: 75px;
+	}
+}
+.presale__img{
+	margin: -100px 0px;
+}
+.presale__btn{
+	background-color: #f9c864;
+	border-radius: 10px;
+	text-decoration: none;
+	color: $main;
+	font-weight: 700;
+	font-size: 40px;
+	padding: 10px 30px;
+}
+.about__title{
+	margin-bottom: 0;
+	margin-top: 170px;
+}
+.about__content{
+	@extend .wrapper-sm;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: space-between;
+
+}
+
+.about__text{
+	width: 600px;
+	max-width: 100%;
+}

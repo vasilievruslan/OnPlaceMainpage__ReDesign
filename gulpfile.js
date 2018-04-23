@@ -24,7 +24,7 @@ var path = {
     },
     src: {
         html: 'src/*.html',
-        style: 'src/sass/style.scss',
+        style: 'src/scss/style.scss',
         js: 'src/js/main.js',
         img: 'src/img/**/*.*',
         fonts: 'src/font/**/*.*'
@@ -32,7 +32,7 @@ var path = {
     watch: {
         html: 'src/**/*.html',
         js: 'src/js/**/*.js',
-        style: 'src/sass/**/*.scss',
+        style: 'src/scss/**/*.scss',
         img: 'src/img/**/*.*',
         fonts: 'src/font/**/*.*'
     },

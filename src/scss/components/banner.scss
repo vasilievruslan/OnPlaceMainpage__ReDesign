@@ -1,0 +1,40 @@
+.banner{
+	width: 100vw;
+	height: 100vh;
+	background: url('../img/banner_background.jpg') left top no-repeat;
+	background-size: cover;
+	position: relative; 
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+}
+.switcher{
+	position: absolute;
+	top: 20px;
+	right: 20px;
+	display: flex;
+	align-items: center;
+	
+}
+.switcher__item{
+	padding: 5px;
+	img{
+		display: block;
+	}
+}
+.banner__content{
+	text-align: center;
+}
+.maintitle{
+	margin: 30px 0px 10px;
+	font-weight: 600;
+}
+
+.banner__subtitle{
+	margin: 10px 0px;
+}
+
+.content{
+	background:transparent url('img/background__cycles.svg') left top no-repeat;
+}
