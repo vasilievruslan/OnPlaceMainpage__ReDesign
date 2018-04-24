@@ -1,9 +1,16 @@
-@import url('https://fonts.googleapis.com/css?family=Do+Hyeon|Jua|Montserrat:300,400,400i,600,700');
+// @import uvrl('https://fonts.googleapis.com/css?family=Do+Hyeon|Jua|Montserrat:300,400,400i,600,700');
+$main: #00426E;
+$gold: #f5a623;
+$blue: #1e9df2;
+$blue-gradient: linear-gradient(to right, #55ccf2 0%, #2f80ed 100%);
 
+*{
+	outline: none;
+}
 body{
 	font-family: 'Montserrat', 'Do Hyeon', sans-serif;
 	font-size: 14px;
-	color: #00426e;
+	color: $main;
 }
 h1{
 	padding: 0px 20px;
@@ -39,10 +46,6 @@ div{
 }
 
 
-$main: #00426e;
-$gold: #f5a623;
-$blue: #1e9df2;
-$blue-gradient: linear-gradient(to right, #55ccf2 0%, #2f80ed 100%);
 
 
 .wrapper{

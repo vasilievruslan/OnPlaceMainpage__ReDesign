@@ -27,14 +27,14 @@ var path = {
         style: 'src/scss/style.scss',
         js: 'src/js/main.js',
         img: 'src/img/**/*.*',
-        fonts: 'src/font/**/*.*'
+        fonts: 'src/fonts/**/*.*'
     },
     watch: {
         html: 'src/**/*.html',
         js: 'src/js/**/*.js',
         style: 'src/scss/**/*.scss',
         img: 'src/img/**/*.*',
-        fonts: 'src/font/**/*.*'
+        fonts: 'src/fonts/**/*.*'
     },
     clean: './build'
 };

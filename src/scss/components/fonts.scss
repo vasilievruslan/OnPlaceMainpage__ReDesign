@@ -1,0 +1,22 @@
+// @import url('https://fonts.googleapis.com/css?family=Do+Hyeon|Jua|Montserrat:300,400,400i,600,700');
+
+@font-face{
+	font-family: 'Do Hyeon';
+	src: url('../fonts/Do_Hyeon/DoHyeon-Regular.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'Montserrat';
+	src: 
+		 url('../fonts/Montserrat/Montserrat-Medium.ttf') format('truetype'),
+		 url('../fonts/Montserrat/Montserrat-LightItalic.ttf') format('truetype'),
+		 url('../fonts/Montserrat/Montserrat-Thin.ttf') format('truetype'),
+		 url('../fonts/Montserrat/Montserrat-Bold.ttf') format('truetype'),
+		 url('../fonts/Montserrat/Montserrat-Black.ttf') format('truetype'),
+		 url('../fonts/Montserrat/Montserrat-Regular.ttf') format('truetype'),
+		 url('../fonts/Montserrat/Montserrat-Italic.ttf') format('truetype'),
+}
+@font-face {
+	font-family: 'Jua';
+	src:url('../fonts/Jua/Jua-Regular.ttf') format('truetype');
+}
