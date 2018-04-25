@@ -1,4 +1,7 @@
-$(function() {
+'use strict'
+
+//= anime.min.js
+;$(function() {
 	$('a[href*="#"]')
     .not('[href="#"]')
     .not('[href="#0"]')
@@ -29,6 +32,11 @@ $(function() {
 
 	$(window).scroll(function () {
 		var st = $(this).scrollTop();
+		var team = $('.team__container').offset().top - $(window).height() / 1.5
+
+		if (st > team) {			
+			teamFade.play();
+		}
 
 		$('.content').css({
 			backgroundPositionY: (st - 3000) * 0.5,
@@ -50,4 +58,14 @@ $(function() {
 	$('.roadmap__date').click(function() {
 		$(this).parent().addClass('active').siblings().removeClass('active')
 	});
+
+
+	var teamFade = anime({
+		targets: '.team__item',
+		delay: function(el, i, l) { return i * 100; },
+		opacity: 1,
+    	easing: 'easeOutExpo',
+    	autoplay: false,
+
+	})
 })

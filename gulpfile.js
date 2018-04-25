@@ -11,7 +11,8 @@ const cssmin = require('gulp-minify-css');
 const imagemin = require('gulp-imagemin');
 const pngquant = require('imagemin-pngquant');
 const rimraf = require('rimraf');
-const browserSync = require("browser-sync");
+const browserSync = require('browser-sync');
+const babel = require('gulp-babel');
 const reload = browserSync.reload;
 
 var path = {
@@ -62,6 +63,9 @@ gulp.task('js:build', function () {
         .pipe(uglify())
         .pipe(sourcemaps.write())
         .pipe(gulp.dest(path.build.js))
+        .pipe(babel({
+            presets: ['env']
+        }))
         .pipe(reload({stream: true}));
 });
 gulp.task('style:build', function () {
