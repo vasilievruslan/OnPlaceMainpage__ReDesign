@@ -6,11 +6,14 @@
 	padding: 80px;
 	box-sizing: border-box;
 	display: flex;
-	justify-content: space-between;
+	justify-content: space-around;
 	flex-wrap: wrap;
 	@extend .wrapper;
 	
 
+}
+.footer__media{
+	margin-bottom: 50px;
 }
 .footer__media__title{
 	font-size: 24px;
@@ -115,6 +118,17 @@
 	border: 1px solid #1d9df2;
 }
 
+@media screen and (max-width: 1024px) {
+	.footer{
+		padding: 40px 20px;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.footer__sect{
+		padding: 0px 20px;
+	}
+}
 @media screen and (max-width: 425px) {
 	.footer{
 		padding: 80px 20px;	

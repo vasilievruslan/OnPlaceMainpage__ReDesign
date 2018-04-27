@@ -34,7 +34,18 @@
 		}
 	}
 }
-
+.member__picture{
+	position: relative;
+}
+.member__link{
+	position: absolute;
+	width: 30px;
+	height: 33px;
+	background:transparent url('../img/IN.svg') center center no-repeat;
+	background-size: cover;
+	top: 212px;
+	right: 40px;
+}
 .member__description{
 	padding: 0px 50px;
 	width: 450px;
