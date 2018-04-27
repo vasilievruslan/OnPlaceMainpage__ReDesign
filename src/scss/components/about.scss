@@ -55,3 +55,19 @@
 	width: 600px;
 	max-width: 100%;
 }
+@media screen and (max-width: 1024px) {
+	.about{
+		padding: 0px 20px;
+	}
+}
+@media screen and (max-width: 768px) {
+	.about__img{
+		margin: 20px auto;
+	}
+	.presale-banner{
+		flex-wrap: wrap;
+		img{
+			display: none;
+		}
+	}
+}

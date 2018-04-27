@@ -10,9 +10,9 @@
 	margin-bottom: 100px;
 }
 .advisors__pics{
-	// @extend .wrapper;
 	padding: 0px 30px;
 	box-sizing: border-box;
+
 
 	svg{
 		max-width: 100%;
@@ -38,5 +38,19 @@
 
 	&:hover{
 		opacity: 0.7;
+	}
+}
+
+@media screen and (max-width: 1024px) {
+	.advisors{
+		// margin-bottom: 300px;
+	}
+	.advosors__descriptions{
+		position: relative;
+		right: 0;
+		padding: 20px;
+		margin-top: 50px;
+		width: 100%;
+		box-sizing: border-box;
 	}
 }

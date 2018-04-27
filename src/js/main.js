@@ -30,9 +30,16 @@
         }
     });
 
+
 	$(window).scroll(function () {
 		var st = $(this).scrollTop();
-		var team = $('.team__container').offset().top - $(window).height() / 1.5
+		var team = $('.team__container').offset().top - $(window).height() / 1.5;
+
+		// var roadmap = $('.roadmap').offset().top - $(window).height() / 1.5;
+
+		// if (st > roadmap && ) {
+		// 	$('.line').height(st + 500 - $('.line').offset().top)
+		// }
 
 		if (st > team) {			
 			teamFade.play();
@@ -68,4 +75,11 @@
     	autoplay: false,
 
 	})
+	$('#feedback').click(function(event) {
+		event.preventDefault()
+		$('.nav__links').slideToggle(400);
+
+	});
+
+	
 })
