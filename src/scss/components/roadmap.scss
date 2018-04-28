@@ -1,5 +1,5 @@
 .roadmap{
-	background:transparent url('../img/banner_background.jpg') left -200px no-repeat;
+	background:transparent url('../img/banner_background.jpg') left bottom no-repeat;
 	background-size: cover;
 	font-family: 'Montserrat', 'Do Hyeon', sans-serif;
 	padding-top: 10px;
@@ -27,8 +27,7 @@
 	margin: 40px 0px;
 	padding: 5px 0px;
 	position: relative;
-	&:before{
-		content: '';
+	.line{
 		position: absolute;
 		left: calc(50% - 1px);
 		height: 100%;
@@ -39,7 +38,6 @@
 }
 .roadmap__point{
 	display: flex;
-	flex-wrap: wrap;
 	justify-content: center;
 	align-items: center;
 	position: relative;
@@ -121,4 +119,33 @@
 	text-align: center;
 	padding: 10px;
 	font-family: Montserrat, sans-serif;
+}
+
+@media screen and (max-width: 1024px) {
+	.roadmap__point{
+		margin-bottom: 250px;
+
+	}
+	.point__description{
+		left: 50%;
+		transform: translateX(-50%);
+		top: 100px;
+		background-color: #fff;
+		overflow: hidden;
+		&:before{
+			top: -15px;
+			left: 50%;
+			transform: translateX(-50%);
+			border-width: 0 13px 15px 13px;
+			border-color: transparent transparent $main transparent;
+		}
+	}
+	.active{
+		.point__name{
+			&:nth-child(3){
+				opacity: 1;
+			}
+		}
+	}
+
 }

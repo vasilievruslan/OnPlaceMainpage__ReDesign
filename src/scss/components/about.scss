@@ -1,3 +1,6 @@
+.about__container{
+	padding-top: 1px;
+}
 .content{
 	padding-top: 10px;
 	background:transparent url('../img/background__cycles.svg') left top;
@@ -54,4 +57,29 @@
 .about__text{
 	width: 600px;
 	max-width: 100%;
+}
+@media screen and (max-width: 1024px) {
+	.about{
+		padding: 0px 20px;
+	}
+}
+@media screen and (max-width: 768px) {
+	.presale__title{
+
+		span:first-child{
+			margin-right: 0;
+		}
+	}
+	.about__img{
+		margin: 20px auto;
+	}
+	.presale-banner{
+		flex-wrap: wrap;
+	    padding: 20px;
+	    justify-content: center;
+	    text-align: center;
+		img{
+			display: none;
+		}
+	}
 }

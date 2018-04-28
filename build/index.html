@@ -14,13 +14,25 @@
 		<div class="nav__logo">
 			<img src="img/logo_main.svg" alt="">
 		</div>
+		<div class="nav__links">
+			<a href="" class="nav__links__item --slack"></a>
+			<a href="" class="nav__links__item --wechat"></a>
+			<a href="" class="nav__links__item --medium"></a>
+			<a href="" class="nav__links__item --twitter"></a>
+			<a href="" class="nav__links__item --telegam"></a>
+			<a href="" class="nav__links__item --facebook"></a>
+			<a href="" class="nav__links__item --instagram"></a>
+			<a href="" class="nav__links__item --bitcoiontalk"></a>
+			<a href="" class="nav__links__item --github"></a>
+			<a href="" class="nav__links__item --reddit"></a>
+		</div>
 		<ul class="nav__list">
 			<li class="nav__item"><a href="#about">About</a></li>
 			<li class="nav__item"><a href="#manual">How it works</a></li>
 			<li class="nav__item"><a href="#whitepaper">Whitepaper</a></li>
 			<li class="nav__item"><a href="#team">Team</a></li>
 			<li class="nav__item"><a href="#roadmap">Roadmap</a></li>
-			<li class="nav__item"><a href="#feedback">Feedback</a></li>
+			<li class="nav__item"><a id="feedback" href="#">Feedback</a></li>
 		</ul>
 	</nav>
 	
@@ -64,8 +76,11 @@
 			<h3 class="manual__title">작동 원리</h3>
 			<h4 class="manual__subtitle">개인 자산을 토큰화할 때 어떤 일이 생깁니까?</h4>
 		
-			<div class="manual__container">
+			<div class="manual__container --desktop">
 				<img src="img/manual.svg" alt="">
+			</div>
+			<div class="manual__container --responsive">
+				<img src="img/manual-adaptive.svg" alt="">
 			</div>
 		
 			<h4 class="whitepapper__intro">OnPlace에 대한 자세한 내용</h4>
@@ -78,7 +93,10 @@
 			<div class="team__subtitle">한 팀의 모든 구성원은 서로 다른 역할을 수행하지만, 모든 역할은 단일 목표를 향해 이루어지며 모든 팀 구성원은 회사를 성공으로 이끌 기 위해 최선을 다하고 있습니다. 20 년 이상의 투자 경험. 12 년간의 분석 경험. 5 년간 Big 데이터 작업</div>
 			<div class="team__container">
 				<div class="team__item">
-					<div class="member__picture"><img src="../img/team/Eugene.png" alt=""></div>
+					<div class="member__picture">
+						<img src="../img/team/Eugene.png" alt="">
+						<a target="_blank" href="https://www.linkedin.com/in/mrperikov/" class="member__link"></a>
+					</div>
 					<div class="member__description">
 						<div class="member__name">에브게니 페리코프</div>
 						<div class="member__positon">OnPlaceInc. 설립자</div>
@@ -86,7 +104,10 @@
 					</div>
 				</div>
 				<div class="team__item">
-					<div class="member__picture"><img src="../img/team/Michael.png" alt=""></div>
+					<div class="member__picture">
+						<img src="../img/team/Michael.png" alt="">
+						<a target="_blank" href="https://www.linkedin.com/in/mikhailgamov/" class="member__link"></a>
+					</div>
 					<div class="member__description">
 						<div class="member__name">미하일 가모프</div>
 						<div class="member__positon">OnPlaceInc. 의 공동 설립자</div>
@@ -94,7 +115,10 @@
 					</div>
 				</div>
 				<div class="team__item">
-					<div class="member__picture"><img src="../img/team/Oleg.png" alt=""></div>
+					<div class="member__picture">
+						<img src="../img/team/Oleg.png" alt="">
+						<a target="_blank" href="https://www.linkedin.com/in/oleg-esipenko-789624156/" class="member__link"></a>
+					</div>
 					<div class="member__description">
 						<div class="member__name">올레그 블라디미로비치 에시스</div>
 						<div class="member__positon">러시아 지사장</div>
@@ -102,7 +126,10 @@
 					</div>
 				</div>
 				<div class="team__item">
-					<div class="member__picture"><img src="../img/team/MIke.png" alt=""></div>
+					<div class="member__picture">
+						<img src="../img/team/MIke.png" alt="">
+						<a target="_blank" href="https://www.linkedin.com/in/mikhailgorden/" class="member__link"></a>
+					</div>
 					<div class="member__description">
 						<div class="member__name">마이크 고든</div>
 						<div class="member__positon">커뮤니케이션 매니저</div>
@@ -110,7 +137,10 @@
 					</div>
 				</div>
 				<div class="team__item">
-					<div class="member__picture"><img src="../img/team/Ilya.png" alt=""></div>
+					<div class="member__picture">
+						<img src="../img/team/Ilya.png" alt="">
+						<a target="_blank" href="https://www.linkedin.com/in/ilya-solovyanov-554847127/" class="member__link"></a>
+					</div>
 					<div class="member__description">
 						<div class="member__name">일리아 솔로 비야 노프</div>
 						<div class="member__positon">스마트 계약 개발자 IT 책임자</div>
@@ -118,7 +148,10 @@
 					</div>
 				</div>
 				<div class="team__item">
-					<div class="member__picture"><img src="../img/team/dmitiy.png" alt=""></div>
+					<div class="member__picture">
+						<img src="../img/team/dmitiy.png" alt="">
+						<a target="_blank" href="http://www.linkedin.com/in/dgkovalev" class="member__link"></a>
+					</div>
 					<div class="member__description">
 						<div class="member__name">드미트리 코발레프</div>
 						<div class="member__positon">SEO, SMM</div>
@@ -126,7 +159,10 @@
 					</div>
 				</div>
 				<div class="team__item">
-					<div class="member__picture"><img src="../img/team/andrei.png" alt=""></div>
+					<div class="member__picture">
+						<img src="../img/team/andrei.png" alt="">
+						<a target="_blank" href="https://www.linkedin.com/in/andrey-rublyov-b68778155/" class="member__link"></a>
+					</div>
 					<div class="member__description">
 						<div class="member__name">안드레이 루블레프</div>
 						<div class="member__positon">웹 디자이너 및 일러스트레이터</div>
@@ -134,7 +170,10 @@
 					</div>
 				</div>
 				<div class="team__item">
-					<div class="member__picture"><img src="../img/team/edward.png" alt=""></div>
+					<div class="member__picture">
+						<img src="../img/team/edward.png" alt="">
+						<a target="_blank" href="https://www.linkedin.com/in/dolgikhred/" class="member__link"></a>
+					</div>
 					<div class="member__description">
 						<div class="member__name">에두아르트 돌기크</div>
 						<div class="member__positon">콘텐츠 및 소셜 미디어 관리자</div>
@@ -142,7 +181,10 @@
 					</div>
 				</div>
 				<div class="team__item">
-					<div class="member__picture"><img src="../img/team/vladimir.png" alt=""></div>
+					<div class="member__picture">
+						<img src="../img/team/vladimir.png" alt="">
+						<a target="_blank" href="https://www.linkedin.com/in/vladimir-litvinov-83a836b6/" class="member__link"></a>
+					</div>
 					<div class="member__description">
 						<div class="member__name">블라디미르 리트비노프</div>
 						<div class="member__positon">OnPlaceInc. 의 커뮤니케이션 관리자</div>
@@ -150,15 +192,21 @@
 					</div>
 				</div>
 				<div class="team__item">
-					<div class="member__picture"><img src="../img/team/ruslan.png" alt=""></div>
+					<div class="member__picture">
+						<img src="../img/team/ruslan.png" alt="">
+						<a target="_blank" href="https://www.linkedin.com/in/ruslan-vasiliev-570699123/" class="member__link"></a>
+					</div>
 					<div class="member__description">
 						<div class="member__name">루슬란 바실리에프</div>
 						<div class="member__positon">프런트 엔드 개발자</div>
-						<div class="member__summary">프런트 뷰 및 웹 애플리케이션 개발 업체. HTML, CASE, JavaScript및 .uery프로그래밍 기술을 가지고 있습니다.</div>
+						<div class="member__summary">프런트 뷰 및 웹 애플리케이션 개발 업체. HTML, CSS, JavaScript및 Jquery프로그래밍 기술을 가지고 있습니다.</div>
 					</div>
 				</div>
 				<div class="team__item">
-					<div class="member__picture"><img src="../img/team/valentina.png" alt=""></div>
+					<div class="member__picture">
+						<img src="../img/team/valentina.png" alt="">
+						<a target="_blank" href="https://www.linkedin.com/in/valentina-pshenichnaya-2b44b8a1/" class="member__link"></a>
+					</div>
 					<div class="member__description">
 						<div class="member__name">발렌티나 프 세니 치나 야</div>
 						<div class="member__positon">커뮤니티 매니저</div>
@@ -170,38 +218,7 @@
 
 		<section class="advisors">
 		
-			<h3 class="advisors__title">Advisors</h3>
-		
-			<div class="advosors__descriptions">
-				<div data-advisor-id="0" class="advosors__descriptions__item">
-					<div class="advisor__name">니콜라스 라이트</div>
-					<div class="advisor__summary">니콜라스는 지브롤터에서 ico 및 디지털 원장 기술을 제공하는 면허 업체로 운영하고 있습니다. 대한 자문을 필요로 하는 고객을 위한 회사입니다. Nicholas는 지브롤터의 규제 기관 및 재무 센터 관계자 및 Digital Ledger 영역의 기타 중요한 구성원들과 인맥을 형성하고 같이 사업을 한 경험이 있습니다. 니콜라스 (Nicholas)는 회사 내에서 이러한 문제에 관한 법률에 대해 여러 고객에게 조언 한 팀의 일원이기도 합니다. 또한 금융 서비스 업계의 다양한 라이센스 및 규제 측면에 관해 고객에게 조언합니다.일반적인 배경으로, 투자 은행 업무의 고위 관리 직책에서 23 년간의 경험을 쌓은 니콜라스는 경력변화를 추구했습니다. 그는 현재 2014 년 9 월 5 일부터 공인 된 법 집행 기관의 준회원으로 활동하고 있습니다. 그의 실무 영역은 개인 클라이언트 솔루션에 중점을두고 회사를 이끌고 있습니다. 그는 전문 관리인으로서의 많은 경험을 가지고 있습니다. Nicholas는 금융 서비스 회사 이사로 기업 차원에서 라이센스를 취득했으며 2013 년 11 월 13 일부터 개인적으로 라이센스를 받았습니다</div>
-				</div>
-				<div data-advisor-id="1" class="advosors__descriptions__item">
-					<div class="advisor__name">Lorem dolor.</div>
-					<div class="advisor__summary">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut quos eius veritatis autem, voluptas fuga doloribus maiores velit facere sint ea amet eveniet alias a harum temporibus molestiae nam iste.</div>
-				</div>
-				<div data-advisor-id="2" class="advosors__descriptions__item">
-					<div class="advisor__name"></div>
-					<div class="advisor__summary"></div>
-				</div>
-				<div data-advisor-id="3" class="advosors__descriptions__item">
-					<div class="advisor__name"></div>
-					<div class="advisor__summary"></div>
-				</div>
-				<div data-advisor-id="4" class="advosors__descriptions__item">
-					<div class="advisor__name"></div>
-					<div class="advisor__summary"></div>
-				</div>
-				<div data-advisor-id="5" class="advosors__descriptions__item">
-					<div class="advisor__name"></div>
-					<div class="advisor__summary"></div>
-				</div>
-				<div data-advisor-id="6" class="advosors__descriptions__item">
-					<div class="advisor__name"></div>
-					<div class="advisor__summary"></div>
-				</div>
-			</div>
+			<h3 class="advisors__title">Advisors</h3>	
 		
 			<div class="advisors__pics">
 		
@@ -281,6 +298,55 @@
 		            </g>
 		        </svg>
 			</div>
+		
+			<div class="advosors__descriptions">
+				<div data-advisor-id="0" class="advosors__descriptions__item">
+					<div class="advisor__name">Nicholas Wright</div>
+					<div class="advisor__summary">
+		                <p>Nicholas is the first port of call for clients who require advice on establishing themselves as licensed firms to offer Initial Coin Offerings and Digital Ledger Technology services in Gibraltar under the newly established regulatory framework. Nicholas has experience in liaising with Gibraltar’s regulatory body and finance centre officials and other vital components of the Digital Ledger sphere. Nicholas forms part of a team within the firm that have advised several clients on legislation on such matters. The team also advise clients on a variety of licensing and regulatory aspects of the financial services industry.</p>
+		                <p>As a general background, after 23 years of experience culminating in Senior Management positions in Investment Banking, Nicholas pursued a career change to law. He is now an Associate Member of the Chartered Institute of Legal Executives since 5th September 2014. His practice area concentrates on Private Client solutions and leads the firm’s Family Office services. He has vast experience as a professional Trustee and is in close contact with family principals.</p>
+		                <p>Nicholas is licensed both at a corporate level as a Financial Services Company Director and is personally licensed as from 13th November 2013.</p>
+		            </div>
+				</div>
+				<div data-advisor-id="1" class="advosors__descriptions__item">
+					<div class="advisor__name">Reuben Godfrey</div>
+					<div class="advisor__summary">
+		                <p>Worked in sales, business development, finance and operations roles for major multinationals and start-ups in the tech, telecoms and pharmaceutical industries globally.</p>
+		                <p>He is co-founder the Blockchain Association of Ireland, Crypto Coast, the Irish Chamber of Commerce in Slovakia and sits on the NSAI National Mirror Committee to ISO TC 307</p>
+		            </div>
+				</div>
+				<div data-advisor-id="2" class="advosors__descriptions__item">
+					<div class="advisor__name">Guley Anatoliy</div>
+					<div class="advisor__summary">
+		                <p>Chairman of the board of Ukrainian Interbank Currency Exchange, Doctor of Economics, professor at Ternopil National Economic University, expert in the Public Councils of the Ministry of Finance and National Bank of Ukraine as well as a cochairman of the board of the NBU Expert Council. Member of the Council of the Ukranian Bank Union, President of the “Business. People Club.”</p>
+		                <p>In his 20 years of experience in the sphere of banking development, Anatoliy Guley has reached great heights on an international level and has become an investment expert, a scientific figure, and an acknowledged professor at many universities.</p>
+		            </div>
+				</div>
+				<div data-advisor-id="3" class="advosors__descriptions__item">
+					<div class="advisor__name">Simon Cocking</div>
+					<div class="advisor__summary">Senior Editor at Irish Tech News, Editor in Chief at CryptoCoinNews, and freelances for Sunday Business Post, Irish Times, Southern Star, IBM, G+D, and other publications. He also been named on 10 global Twitter influencer lists in the last 12 months. He is an accomplished public speaker at events including TEDx, Web Summit, Dublin Tech Summit, and overseas in Dubai, Singapore, Moscow, Tel Aviv, Madrid, Tbilisi, Riga, Porto, Dublin and Helsinki in the last 12 months</div>
+				</div>
+				<div data-advisor-id="4" class="advosors__descriptions__item">
+					<div class="advisor__name">Nathan Christian</div>
+					<div class="advisor__summary">
+		                <p>Technical expert in blockchain-based accounting and financial applications. Serial entrepreneur with over 35 start-ups in portfolio.</p>
+		                <p>Initial Coin Offering (ICO) strategy, development, venture capital investment, consulting and advising. MBA from the Ohio State University.</p>
+		            </div>
+				</div>
+				<div data-advisor-id="5" class="advosors__descriptions__item">
+					<div class="advisor__name">Mr. Stanton</div>
+					<div class="advisor__summary">
+		                <p>Highly experienced in securities, banking, ICO & Cryptocurrency Law. Former JAG Officer. Sophisticated and knowledgeable legal counsel to provide the guidance necessary to succeed in this cutting-edge technology.</p>
+		                <p>Mr. Stanton helps navigate the complex legal issues of regulatory compliance, valuation and management protocols and controls, among other considerations.</p>
+		                <p>Responsive and knowledgeable about the complex constellation of legal questions involved in dealing with cryptocurrencies, Mr. Stanton has moved to the forefront of law firms counseling clients in the evolving Bitcoin and cryptocurrency environment.</p>
+		                <p>Mr. Stanton also provides on-site international incorporation services for Belarus, Switzerland, Singapore, Malta, Gibraltar and Estonia.</p>
+		            </div>
+				</div>
+				<div data-advisor-id="6" class="advosors__descriptions__item">
+					<div class="advisor__name">Tyler Sanford</div>
+					<div class="advisor__summary">Blockchain Engineer & Advisor at Cryptocurrency Commodity Solutions has over 7 years of marketing and sales experience with different tech startups like Yelp, Zenefits, and WeddingWire. Has spent that past year devoted to cryptocurrency trading and projects. He has been an advisor on several top ranking ICO’s.</div>
+				</div>
+			</div>
 			
 		</section>
 
@@ -289,13 +355,14 @@
 				<h3 class="roadmap__title">Roadmap</h3>
 				<div class="roadmap__description">Technological Developments of the OnPlace project <br>Work related to financial and legal spheres of the OnPlace system</div>
 				<div class="roadmap__sect">
+					<div class="line"></div>
 					<div class="roadmap__point active" >
 						<div class="point__name">Alpha completion</div>
 						<div class="roadmap__date">MARCH – MAY 2018 </div>
 						<div class="point__name"></div>
 						<div class="point__description">
-							<div class="point__description__title">Lorem ipsum.</div>
-							<div class="point__description__content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias quasi iste, explicabo. Rerum reiciendis error, in tenetur quaerat recusandae totam.</div>
+							<div class="point__description__title">Alpha completion</div>
+							<div class="point__description__content">Completion of development of the alpha version of the main shell and the core of the PATS protocol, testing on the basis of IPFG</div>
 						</div>
 					</div>
 					<div class="roadmap__point">
@@ -303,8 +370,8 @@
 						<div class="roadmap__date">MAY 2018</div>
 						<div class="point__name"></div>
 						<div class="point__description">
-							<div class="point__description__title">Ex, id.</div>
-							<div class="point__description__content">Neque repellat alias consequuntur necessitatibus aspernatur eos a, illo iusto minus numquam et nobis facilis ea? Quas sint, excepturi. Sit.</div>
+							<div class="point__description__title">TTFA</div>
+							<div class="point__description__content">Implementation, testing and functionality adjustment of time attributes (Token Time Frame attribute) and the team insuring its work</div>
 						</div>
 					</div>
 					<div class="roadmap__point">
@@ -312,8 +379,8 @@
 						<div class="roadmap__date">MAY-JULY 2018</div>
 						<div class="point__name">2m deal closure</div>
 						<div class="point__description">
-							<div class="point__description__title">Sapiente, velit!</div>
-							<div class="point__description__content">Iusto sit mollitia, reprehenderit nihil corporis voluptatem totam perferendis sequi voluptatum, sunt. Illo, quidem consequatur dolorem vero nobis mollitia modi.</div>
+							<div class="point__description__title">2m deal closure</div>
+							<div class="point__description__content">Contractual work, closing deals for purchasing rights to shares selected for company tokenization. 2-3 projects with a cumulative investment amount of $2M</div>
 						</div>
 					</div>
 					<div class="roadmap__point">
@@ -321,8 +388,8 @@
 						<div class="roadmap__date">JUNE 2018</div>
 						<div class="point__name"></div>
 						<div class="point__description">
-							<div class="point__description__title">Quos, eveniet.</div>
-							<div class="point__description__content">Cum culpa, magni, eius mollitia obcaecati, ipsa in ratione eum illo non ut commodi aliquam adipisci modi voluptates veniam saepe!</div>
+							<div class="point__description__title">TBAAs</div>
+							<div class="point__description__content">Implementation, testing and functionality adjustment of attributes securing the underlying asset (Token Backed Assets attribute) and the team insuring its work</div>
 						</div>
 					</div>
 					<div class="roadmap__point">
@@ -330,8 +397,8 @@
 						<div class="roadmap__date">JULY 2018</div>
 						<div class="point__name">4m deal closure</div>
 						<div class="point__description">
-							<div class="point__description__title">Harum, pariatur!</div>
-							<div class="point__description__content">Quae, reprehenderit corrupti architecto impedit porro soluta, possimus esse facilis hic et iusto blanditiis magni nam aspernatur accusantium? Quod, molestiae.</div>
+							<div class="point__description__title">4m deal closure</div>
+							<div class="point__description__content">Contractual work, closing deals for purchasing rights to shares selected for company tokenization 3-5 projects with a cumulative investment amount up to $4M</div>
 						</div>
 					</div>
 					<div class="roadmap__point">
@@ -339,8 +406,8 @@
 						<div class="roadmap__date">AUGUST 2018</div>
 						<div class="point__name">TA in circulation</div>
 						<div class="point__description">
-							<div class="point__description__title">Quia, veritatis!</div>
-							<div class="point__description__content">Delectus nobis sit odit esse quae! Sequi rerum, repellat eius quam inventore voluptates. Eligendi, fugiat cumque delectus similique cupiditate modi!</div>
+							<div class="point__description__title">TA in circulation</div>
+							<div class="point__description__content">Issuance and organization of the primary placement of tokenized assets on the OnPlace token exchange platform</div>
 						</div>
 					</div>
 					<div class="roadmap__point">
@@ -348,8 +415,8 @@
 						<div class="roadmap__date">SEP - JAN 2019</div>
 						<div class="point__name"></div>
 						<div class="point__description">
-							<div class="point__description__title">Excepturi, odit!</div>
-							<div class="point__description__content">Ea ipsa dolore adipisci nesciunt eos minus, perspiciatis est accusamus consectetur, esse, at sint obcaecati recusandae dolorum earum? Distinctio, tenetur!</div>
+							<div class="point__description__title">Expanding partnership</div>
+							<div class="point__description__content">Legal and organizational work on the release of tokenized assets into 3rd party exchange platforms</div>
 						</div>
 					</div>
 					<div class="roadmap__point">
@@ -357,8 +424,8 @@
 						<div class="roadmap__date">JANUARY 2019</div>
 						<div class="point__name">Full-featured launch</div>
 						<div class="point__description">
-							<div class="point__description__title">Hic, dolores.</div>
-							<div class="point__description__content">Delectus doloremque iusto dolorem quae minus quos accusantium incidunt nemo voluptatem obcaecati labore ipsa eaque quis debitis nesciunt, tempore perferendis.</div>
+							<div class="point__description__title">Full-featured launch</div>
+							<div class="point__description__content">Expansion of the tokenized assets pool towards expected indicators of the first year of work- no less than 10 tokenized projects with a cumulative amount of more than $70M. Achieving this threshold will be considered as a successful full-featured launch of the PATS protocol.</div>
 						</div>
 					</div>
 				</div>

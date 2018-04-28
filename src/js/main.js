@@ -1,7 +1,40 @@
 'use strict'
-
 //= anime.min.js
-;$(function() {
+
+
+function hasTouch() {
+    return 'ontouchstart' in document.documentElement
+           || navigator.maxTouchPoints > 0
+           || navigator.msMaxTouchPoints > 0;
+}
+
+if (hasTouch()) { // remove all :hover stylesheets
+    try { // prevent exception on browsers not supporting DOM styleSheets properly
+     	$(window).scroll(function() {
+        	$('.content').css({
+				backgroundPositionY: 0,
+			});
+     	});
+
+     	$('.nav__logo').click(function(event) {
+     		event.preventDefault();
+     		$('.nav__list').toggleClass('active');
+     	});
+	    for (var si in document.styleSheets) {
+	        var styleSheet = document.styleSheets[si];
+	        if (!styleSheet.rules) continue;
+
+	        for (var ri = styleSheet.rules.length - 1; ri >= 0; ri--) {
+	            if (!styleSheet.rules[ri].selectorText) continue;
+
+	            	if (styleSheet.rules[ri].selectorText.match(':hover')) {
+	                	styleSheet.deleteRule(ri);
+	           	}
+	        }
+	    }	
+    } catch (ex) {}
+}
+$(function() {
 	$('a[href*="#"]')
     .not('[href="#"]')
     .not('[href="#0"]')
@@ -30,9 +63,16 @@
         }
     });
 
+
 	$(window).scroll(function () {
 		var st = $(this).scrollTop();
-		var team = $('.team__container').offset().top - $(window).height() / 1.5
+		var team = $('.team__container').offset().top - $(window).height() / 1.5;
+
+		// var roadmap = $('.roadmap').offset().top - $(window).height() / 1.5;
+
+		// if (st > roadmap && ) {
+		// 	$('.line').height(st + 500 - $('.line').offset().top)
+		// }
 
 		if (st > team) {			
 			teamFade.play();
@@ -68,4 +108,11 @@
     	autoplay: false,
 
 	})
+	$('#feedback').click(function(event) {
+		event.preventDefault()
+		$('.nav__links').slideToggle(400);
+
+	});
+
+	
 })
