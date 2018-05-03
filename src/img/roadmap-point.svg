@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="76px" height="84px" viewBox="0 0 76 84" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49 (51002) - http://www.bohemiancoding.com/sketch -->
+    <title>Polygon 4 Copy 2</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="50%" y1="-2.48949813e-15%" x2="50%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#56CCF2" offset="0%"></stop>
+            <stop stop-color="#2F80ED" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Mobile" transform="translate(-122.000000, -1216.000000)" fill="#F4F4F4" stroke="url(#linearGradient-1)" stroke-width="2">
+            <g id="Group-5" transform="translate(118.000000, 1216.000000)">
+                <path d="M47,2.88675135 L73.373067,18.1132487 C76.4670777,19.8995766 78.373067,23.2008468 78.373067,26.7735027 L78.373067,57.2264973 C78.373067,60.7991532 76.4670777,64.1004234 73.373067,65.8867513 L47,81.1132487 C43.9059892,82.8995766 40.0940108,82.8995766 37,81.1132487 L10.626933,65.8867513 C7.53292227,64.1004234 5.62693304,60.7991532 5.62693304,57.2264973 L5.62693304,26.7735027 C5.62693304,23.2008468 7.53292227,19.8995766 10.626933,18.1132487 L37,2.88675135 C40.0940108,1.1004234 43.9059892,1.1004234 47,2.88675135 Z" id="Polygon-4-Copy-2"></path>
+            </g>
+        </g>
+    </g>
+</svg>

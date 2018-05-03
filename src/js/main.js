@@ -1,5 +1,6 @@
 'use strict'
 //= anime.min.js
+//= slick.js
 
 
 function hasTouch() {
@@ -35,6 +36,35 @@ if (hasTouch()) { // remove all :hover stylesheets
     } catch (ex) {}
 }
 $(function() {
+
+	$('.carousel__slider').slick({
+		infinite: true,
+		slidesToShow: 3,
+		slidesToScroll: 1,
+		autoplay: true,
+		autoplaySpeed: 2000,
+		responsive: [
+	    {
+	      breakpoint: 824,
+	      settings: {
+	        slidesToShow: 2,
+	        slidesToScroll: 2,
+	        infinite: true,
+	        dots: true
+	      }
+	    },
+	    {
+	      breakpoint: 600,
+	      settings: {
+	        slidesToShow: 1,
+	        slidesToScroll: 1
+	      }
+	    }],
+		prevArrow: $('.prev-arr'),
+		nextArrow: $('.next-arr')
+	});
+
+
 	$('a[href*="#"]')
     .not('[href="#"]')
     .not('[href="#0"]')
@@ -95,8 +125,10 @@ $(function() {
 		.fadeOut(400);
 	});
 
-	$('.roadmap__date').click(function() {
-		$(this).parent().addClass('active').siblings().removeClass('active')
+	$('.point__description__title').click(function(event) {
+		$(this).parent().find('.point__description__text').slideToggle(400).parent().parent().siblings().each(function() {
+			$(this).find('.point__description__text').slideUp(400)
+		});;
 	});
 
 

@@ -57,6 +57,9 @@
 }
 
 @media screen and (max-width: 768px) {
+	.member__name{
+		margin-top: 30px;
+	}
 	.team__item{
 		text-align: center !important;
 		flex-wrap: wrap;
