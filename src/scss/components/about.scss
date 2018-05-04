@@ -35,6 +35,7 @@
 .presale__btn{
 	background-color: #f9c864;
 	border-radius: 10px;
+	font-family: 'Montserrat', 'Do Hyeon', sans-serif;
 	text-decoration: none;
 	color: $main;
 	font-weight: 700;
@@ -64,6 +65,16 @@
 	}
 }
 @media screen and (max-width: 768px) {
+	.presale-banner{
+		box-shadow: inset 0px 12px 20px -10px rgba(0,0,0,.5);
+		position: relative;
+		padding-bottom: 40px !important;
+		border-radius: 0;
+	}
+	.presale__btn{
+		position: absolute;
+		bottom: -35px;
+	}
 	.presale__title{
 
 		span:first-child{
@@ -82,4 +93,6 @@
 			display: none;
 		}
 	}
+}
+@media screen and(max-width: 425px) {
 }

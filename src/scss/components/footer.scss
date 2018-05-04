@@ -127,6 +127,13 @@
 @media screen and (max-width: 768px) {
 	.footer__sect{
 		padding: 0px 20px;
+		text-align: center;
+	}
+	.footer__media__links{
+		justify-content: center;
+	}
+	.footer__subscribe{
+		text-align: center;
 	}
 }
 @media screen and (max-width: 425px) {

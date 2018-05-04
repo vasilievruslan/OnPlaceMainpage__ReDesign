@@ -6,23 +6,24 @@
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<link rel="stylesheet" href="css/style.css">
 	<link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,400i,600,700" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
 		<title>OnPlace</title>
 </head>
 <body>
 	
 	<nav class="nav">
 		<div class="nav__logo">
-			<img src="img/logo_main.svg" alt="">
+			<a class="logo__home" href="#home"></a>
 		</div>
 		<div class="nav__links">
 			<a href="" class="nav__links__item --slack"></a>
-			<a href="" class="nav__links__item --wechat"></a>
+			<a href="#wechat" rel="modal:open" class="nav__links__item --wechat"></a>
 			<a href="" class="nav__links__item --medium"></a>
 			<a href="" class="nav__links__item --twitter"></a>
-			<a href="" class="nav__links__item --telegam"></a>
+			<a href="" class="nav__links__item --telegram"></a>
 			<a href="" class="nav__links__item --facebook"></a>
 			<a href="" class="nav__links__item --instagram"></a>
-			<a href="" class="nav__links__item --bitcoiontalk"></a>
+			<a href="" class="nav__links__item --bitcointalk"></a>
 			<a href="" class="nav__links__item --github"></a>
 			<a href="" class="nav__links__item --reddit"></a>
 		</div>
@@ -36,12 +37,41 @@
 		</ul>
 	</nav>
 	
+	<div class="burger-ico">
+		<svg width="40px" height="28px" viewBox="0 0 40 28" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+		    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+		        <g id="Mobile" transform="translate(-266.000000, -14.000000)" fill="#000000" fill-rule="nonzero">
+		            <g id="menu" transform="translate(266.000000, 14.000000)">
+		                <path class="burger__path" d="M5.16981132,4 L33.8301887,4 C34.4759245,4 35,3.104 35,2 C35,0.896 34.4759245,0 33.8301887,0 L5.16981132,0 C4.52407547,0 4,0.896 4,2 C4,3.104 4.52407547,4 5.16981132,4 Z" id="Shape"></path>
+		                <path class="burger__path" d="M1.50943396,16 L38.490566,16 C39.3237736,16 40,15.104 40,14 C40,12.896 39.3237736,12 38.490566,12 L1.50943396,12 C0.676226415,12 0,12.896 0,14 C0,15.104 0.676226415,16 1.50943396,16 Z" id="Shape"></path>
+		                <path class="burger__path" d="M5.16981132,28 L33.8301887,28 C34.4759245,28 35,27.104 35,26 C35,24.896 34.4759245,24 33.8301887,24 L5.16981132,24 C4.52407547,24 4,24.896 4,26 C4,27.104 4.52407547,28 5.16981132,28 Z" id="Shape"></path>
+		            </g>
+		        </g>
+		    </g>
+		</svg>
+	</div>
+	
+	<div class="nav__burger">
+		<ul class="burger__nav__list">
+			<li class="nav__item"><a href="#about">개요</a></li>
+			<li class="nav__item"><a href="#manual">작동방식</a></li>
+			<li class="nav__item"><a target="_blank" href="onplace_whitepaper_kor.pdf">백서</a></li>
+			<li class="nav__item"><a href="#team">팀</a></li>
+			<li class="nav__item"><a href="#roadmap">로드맵</a></li>
+			<li class="nav__item"><a id="" href="#footer">피드백</a></li>
+		</ul>
+		<div class="burger__switcher">
+			<div class="switch__lang">Enlish</div>
+			<a href="eng.html"><img src="img/switch_kor.svg" alt=""></a>
+			<div class="switch__lang">한국어</div>
+		</div>
+	</div>
 	<div class="talk"><img src="img/talk.png" alt="" class="talk__img"></div>
 
-	<section class="banner">
+	<section id="home" class="banner">
 		<div class="switcher">
 			<div class="switcher__item">English</div>
-			<div class="switcher__item"><img src="img/switch_kor.svg" alt=""></div>
+			<div class="switcher__item"><a href="eng.html"><img src="img/switch_kor.svg" alt=""></a></div>
 			<div class="switcher__item">한국어</div>
 		</div>
 	
@@ -55,13 +85,14 @@
 
 	<main class="content">
 		
+		<div class="presale-banner">
+			<h2 class="presale__title"><span>토큰</span> <span>프리세일</span></h1>
+			<div class="presale__img "><img src="img/token_logo.svg" alt=""></div>
+			<a target="_blank" href="" class="presale__btn">구매</a>
+		</div>
+		
 		<section class="about">
 			
-			<div class="presale-banner">
-				<h2 class="presale__title"><span>토큰</span> <span>프리세일</span></h1>
-				<div class="presale__img "><img src="img/token_logo.svg" alt=""></div>
-				<a href="" class="presale__btn">구매</a>
-			</div>
 		
 			<div id="about" class="about__container">
 				<h3 class="about__title">개요</h3>
@@ -84,7 +115,7 @@
 			</div>
 		
 			<h4 class="whitepapper__intro">OnPlace 자세히보기</h4>
-			<div class="whitepapper__btn">백서 읽기</div>
+			<a target="_blank" href="onplace_whitepaper_kor.pdf" class="whitepapper__btn">백서 읽기</a>
 		</section>
 
 		<section class="team" id="team">
@@ -94,7 +125,7 @@
 			<div class="team__container">
 				<div class="team__item">
 					<div class="member__picture">
-						<img src="../img/team/Eugene.png" alt="">
+						<img src="img/team/Eugene.png" alt="">
 						<a target="_blank" href="https://www.linkedin.com/in/mrperikov/" class="member__link"></a>
 					</div>
 					<div class="member__description">
@@ -105,7 +136,7 @@
 				</div>
 				<div class="team__item">
 					<div class="member__picture">
-						<img src="../img/team/Michael.png" alt="">
+						<img src="img/team/Michael.png" alt="">
 						<a target="_blank" href="https://www.linkedin.com/in/mikhailgamov/" class="member__link"></a>
 					</div>
 					<div class="member__description">
@@ -116,7 +147,7 @@
 				</div>
 				<div class="team__item">
 					<div class="member__picture">
-						<img src="../img/team/Oleg.png" alt="">
+						<img src="img/team/Oleg.png" alt="">
 						<a target="_blank" href="https://www.linkedin.com/in/oleg-esipenko-789624156/" class="member__link"></a>
 					</div>
 					<div class="member__description">
@@ -127,7 +158,7 @@
 				</div>
 				<div class="team__item">
 					<div class="member__picture">
-						<img src="../img/team/MIke.png" alt="">
+						<img src="img/team/MIke.png" alt="">
 						<a target="_blank" href="https://www.linkedin.com/in/mikhailgorden/" class="member__link"></a>
 					</div>
 					<div class="member__description">
@@ -138,7 +169,7 @@
 				</div>
 				<div class="team__item">
 					<div class="member__picture">
-						<img src="../img/team/Ilya.png" alt="">
+						<img src="img/team/Ilya.png" alt="">
 						<a target="_blank" href="https://www.linkedin.com/in/ilya-solovyanov-554847127/" class="member__link"></a>
 					</div>
 					<div class="member__description">
@@ -149,7 +180,7 @@
 				</div>
 				<div class="team__item">
 					<div class="member__picture">
-						<img src="../img/team/dmitiy.png" alt="">
+						<img src="img/team/dmitiy.png" alt="">
 						<a target="_blank" href="http://www.linkedin.com/in/dgkovalev" class="member__link"></a>
 					</div>
 					<div class="member__description">
@@ -160,7 +191,7 @@
 				</div>
 				<div class="team__item">
 					<div class="member__picture">
-						<img src="../img/team/andrei.png" alt="">
+						<img src="img/team/andrei.png" alt="">
 						<a target="_blank" href="https://www.linkedin.com/in/andrey-rublyov-b68778155/" class="member__link"></a>
 					</div>
 					<div class="member__description">
@@ -171,7 +202,7 @@
 				</div>
 				<div class="team__item">
 					<div class="member__picture">
-						<img src="../img/team/edward.png" alt="">
+						<img src="img/team/edward.png" alt="">
 						<a target="_blank" href="https://www.linkedin.com/in/dolgikhred/" class="member__link"></a>
 					</div>
 					<div class="member__description">
@@ -182,7 +213,7 @@
 				</div>
 				<div class="team__item">
 					<div class="member__picture">
-						<img src="../img/team/vladimir.png" alt="">
+						<img src="img/team/vladimir.png" alt="">
 						<a target="_blank" href="https://www.linkedin.com/in/vladimir-litvinov-83a836b6/" class="member__link"></a>
 					</div>
 					<div class="member__description">
@@ -193,7 +224,7 @@
 				</div>
 				<div class="team__item">
 					<div class="member__picture">
-						<img src="../img/team/ruslan.png" alt="">
+						<img src="img/team/ruslan.png" alt="">
 						<a target="_blank" href="https://www.linkedin.com/in/ruslan-vasiliev-570699123/" class="member__link"></a>
 					</div>
 					<div class="member__description">
@@ -204,13 +235,24 @@
 				</div>
 				<div class="team__item">
 					<div class="member__picture">
-						<img src="../img/team/valentina.png" alt="">
+						<img src="img/team/valentina.png" alt="">
 						<a target="_blank" href="https://www.linkedin.com/in/valentina-pshenichnaya-2b44b8a1/" class="member__link"></a>
 					</div>
 					<div class="member__description">
 						<div class="member__name">발렌티나 프 세니 치나 야</div>
 						<div class="member__positon">커뮤니티 매니저</div>
 						<div class="member__summary">PR 전문가. 에이전트 네트워크 관리자. 회사의 프레젠테이션, 협상을 수행합니다.</div>
+					</div>
+				</div>
+				<div class="team__item">
+					<div class="member__picture">
+						<img src="img/team/korgirl.png" alt="">
+						<a target="_blank" href="https://www.linkedin.com/in/valentina-pshenichnaya-2b44b8a1/" class="member__link"></a>
+					</div>
+					<div class="member__description">
+						<div class="member__name">Jiyun Woo</div>
+						<div class="member__positon">Community manager.</div>
+						<div class="member__summary">Majored in Korean Studies and Political Science. Have a lot of experience related to international affairs such as multinational projects, international conferences, and interpreting. Blockchain enthusiast since 2016</div>
 					</div>
 				</div>
 			</div>
@@ -411,64 +453,64 @@
 					<div class="line"></div>
 					<div class="roadmap__point">
 						<div class="point__date"><span class="point__date__text">MARCH MAY <br>2018</span></div>
-						<div class="point__description">
+						<div class="point__description left">
 							<div class="point__description__title">Alpha completion</div>
 							<div class="point__description__text">Completion of development of the alpha version of the main shell and the core of the PATS protocol, testing on the basis of IPFG</div>
 						</div>
-						<div class="point__description">
-							<div class="point__description__title">Alpha completion</div>
-							<div class="point__description__text">Completion of development of the alpha version of the main shell and the core of the PATS protocol, testing on the basis of IPFG</div>
-						</div>
-					</div>
-					<div class="roadmap__point">
-						<div class="point__date"><span class="point__date__text">MAY <br>2018</span></div>
-						<div class="point__description">
+						<div class="point__description right">
 							<div class="point__description__title">MOW selection</div>
 							<div class="point__description__text">In-depth review of market opportunities, construction of selected companies for MOW / selection of 10-15 potential projects for tokenization</div>
 						</div>
 					</div>
 					<div class="roadmap__point">
+						<div class="point__date"><span class="point__date__text">MAY <br>2018</span></div>
+						<div class="point__description left">
+							<div class="point__description__title">TTFA</div>
+							<div class="point__description__text right ">Implementation, testing and functionality adjustment of time attributes (Token Time Frame attribute) and the team insuring its work</div>
+						</div>
+					</div>
+					<div class="roadmap__point">
 						<div class="point__date"><span class="point__date__text">MAY JULY <br>2018</span></div>
-						<div class="point__description">
+						<div class="point__description right">
 							<div class="point__description__title">TBAA</div>
 							<div class="point__description__text">Implementation, testing and functionality adjustment of attributes securing the underlying asset (Token Backed Assets attribute) and the team insuring its work</div>
 						</div>
 					</div>
 					<div class="roadmap__point">
 						<div class="point__date"><span class="point__date__text">JUNE <br>2018</span></div>
-						<div class="point__description">
+						<div class="point__description left">
 							<div class="point__description__title">2m deal closure</div>
 							<div class="point__description__text">Contractual work, closing deals for purchasing rights to shares selected for company tokenization. 2-3 projects with a cumulative investment amount of $2M</div>
 						</div>
 					</div>
 					<div class="roadmap__point">
 						<div class="point__date"><span class="point__date__text">JULY <br>2018</span></div>
-						<div class="point__description">
+						<div class="point__description right">
 							<div class="point__description__title">4m deal closure</div>
 							<div class="point__description__text">Contractual work, closing deals for purchasing rights to shares selected for company tokenization 3-5 projects with a cumulative investment amount up to $4M</div>
 						</div>
 					</div>
 					<div class="roadmap__point">
 						<div class="point__date"><span class="point__date__text">AUGUST <br>2018</span></div>
-						<div class="point__description">
+						<div class="point__description left">
 							<div class="point__description__title">Test expansion</div>
 							<div class="point__description__text">Expanded testing of the protocol’s commands for critical vulnerabilities</div>
 						</div>
-						<div class="point__description">
+						<div class="point__description right">
 							<div class="point__description__title">TA in circulation</div>
 							<div class="point__description__text">Issuance and organization of the primary placement of tokenized assets on the OnPlace token exchange platform</div>
 						</div>
 					</div>
 					<div class="roadmap__point">
 						<div class="point__date"><span class="point__date__text">SEP <br>JAN <br>2019</span></div>
-						<div class="point__description">
+						<div class="point__description left">
 							<div class="point__description__title">Expanding partnership</div>
 							<div class="point__description__text">Legal and organizational work on the release of tokenized assets into 3rd party exchange platforms</div>
 						</div>
 					</div>
 					<div class="roadmap__point">
 						<div class="point__date"><span class="point__date__text">JANUARY <br>2019</span></div>
-						<div class="point__description">
+						<div class="point__description right">
 							<div class="point__description__title">Full-featured launch</div>
 							<div class="point__description__text">Expansion of the tokenized assets pool towards expected indicators of the first year of work- no less than 10 tokenized projects with a cumulative amount of more than $70M. Achieving this threshold will be considered as a successful full-featured launch of the PATS protocol.</div>
 						</div>
@@ -477,28 +519,27 @@
 			</div>
 		</section>
 
-		<footer class="footer__sect">
-			
-			<div class="presale-banner">
-				<h2 class="presale__title"><span>토큰</span> <span>프리세일</span></h1>
-				<div class="presale__img "><img src="img/token_logo.svg" alt=""></div>
-				<a href="" class="presale__btn">구매</a>
-			</div>
+		<div class="presale-banner">
+			<h2 class="presale__title"><span>토큰</span> <span>프리세일</span></h1>
+			<div class="presale__img "><img src="img/token_logo.svg" alt=""></div>
+			<a target="_blank" href="" class="presale__btn">구매</a>
+		</div>
+		<footer class="footer__sect">	
 
-			<section class="footer">
+			<section id="footer" class="footer">
 				<div class="footer__media">
 					<div class="footer__media__title">Get In Touch</div>
 					<div class="footer__media__links">
-						<a href="" class="media__link__item --slack"></a>
-						<a href="" class="media__link__item --wechat"></a>
-						<a href="" class="media__link__item --medium"></a>
-						<a href="" class="media__link__item --twitter"></a>
-						<a href="" class="media__link__item --telegram"></a>
-						<a href="" class="media__link__item --facebook"></a>
-						<a href="" class="media__link__item --instagram"></a>
-						<a href="" class="media__link__item --bitcointalk"></a>
+						<a href="https://join.slack.com/t/onplaceinc/shared_invite/enQtMjgzNDgwNTA3NzgzLWIyYjYxYjg5MjAwMTMwMjhjZDQ3ZTkwZDljYmYwNjY3NmMwZGRhNTFkMzQ1NGJlNjQxNWQ2ZTE5ODM0YzliMWQ" class="media__link__item --slack"></a>
+						<a href="#wechat" rel="modal:open" class="media__link__item --wechat"></a>
+						<a href="https://medium.com/@onplace" class="media__link__item --medium"></a>
+						<a href="https://twitter.com/on_place" class="media__link__item --twitter"></a>
+						<a href="https://t.me/on_place" class="media__link__item --telegram"></a>
+						<a href="https://www.facebook.com/onplace" class="media__link__item --facebook"></a>
+						<a href="https://www.instagram.com/on_place/" class="media__link__item --instagram"></a>
+						<a href="https://bitcointalk.org/index.php?topic=2721392.msg27840575#msg27840575" class="media__link__item --bitcointalk"></a>
 						<a href="" class="media__link__item --github"></a>
-						<a href="" class="media__link__item --reddit"></a>
+						<a href="https://www.reddit.com/user/OnPlace" class="media__link__item --reddit"></a>
 			
 					</div>
 				</div>
@@ -516,8 +557,12 @@
 
 	</main>
 
+	<div id="wechat" class="modal">
+		<img width="100%" src="img/weсhat.jpg" alt="">
+	</div>
+
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js" integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
 	<script src="js/main.js"></script>
 </body>
 </html>

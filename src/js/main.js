@@ -9,33 +9,36 @@ function hasTouch() {
            || navigator.msMaxTouchPoints > 0;
 }
 
-if (hasTouch()) { // remove all :hover stylesheets
-    try { // prevent exception on browsers not supporting DOM styleSheets properly
-     	$(window).scroll(function() {
-        	$('.content').css({
-				backgroundPositionY: 0,
-			});
-     	});
-
-     	$('.nav__logo').click(function(event) {
-     		event.preventDefault();
-     		$('.nav__list').toggleClass('active');
-     	});
-	    for (var si in document.styleSheets) {
-	        var styleSheet = document.styleSheets[si];
-	        if (!styleSheet.rules) continue;
-
-	        for (var ri = styleSheet.rules.length - 1; ri >= 0; ri--) {
-	            if (!styleSheet.rules[ri].selectorText) continue;
-
-	            	if (styleSheet.rules[ri].selectorText.match(':hover')) {
-	                	styleSheet.deleteRule(ri);
-	           	}
-	        }
-	    }	
-    } catch (ex) {}
-}
 $(function() {
+
+	if (hasTouch()) { // remove all :hover stylesheets
+	    try { // prevent exception on browsers not supporting DOM styleSheets properly
+
+	     	$('.nav__logo').click(function(event) {
+	     		event.preventDefault();
+	     		$('.nav__list').toggleClass('active');
+	     	});
+		    for (var si in document.styleSheets) {
+		        var styleSheet = document.styleSheets[si];
+		        if (!styleSheet.rules) continue;
+
+		        for (var ri = styleSheet.rules.length - 1; ri >= 0; ri--) {
+		            if (!styleSheet.rules[ri].selectorText) continue;
+
+		            	if (styleSheet.rules[ri].selectorText.match(':hover')) {
+		                	styleSheet.deleteRule(ri);
+		           	}
+		        }
+		    }	
+	    } catch (ex) {}
+	}
+
+
+	$('.burger-ico').click(function(event) {
+		$(this).toggleClass('active');
+		$('.nav__burger').toggleClass('active');
+
+	});
 
 	$('.carousel__slider').slick({
 		infinite: true,
@@ -108,9 +111,11 @@ $(function() {
 			teamFade.play();
 		}
 
-		$('.content').css({
-			backgroundPositionY: (st - 3000) * 0.5,
-		});	
+		if($(window).width() > 768){
+			$('.content').css({
+				backgroundPositionY: (st - 3000) * 0.5,
+			});	
+		}
 	})
 
 	$('.advosors__descriptions__item').not('[data-advisor-id="0"]').hide();
@@ -125,11 +130,19 @@ $(function() {
 		.fadeOut(400);
 	});
 
-	$('.point__description__title').click(function(event) {
-		$(this).parent().find('.point__description__text').slideToggle(400).parent().parent().siblings().each(function() {
-			$(this).find('.point__description__text').slideUp(400)
-		});;
-	});
+	if($(window).width() < 768){
+		$('.point__description__title').click(function(event) {
+			$(this).parent().find('.point__description__text').slideToggle(400).parent().parent().siblings().each(function() {
+				$(this).find('.point__description__text').slideUp(400)
+			});
+		});
+	}else{
+		$('.point__description').click(function(event) {
+			$(this).toggleClass('active').siblings().removeClass('active').parent().siblings().each(function() {
+				$(this).find('point__description').removeClass('active');
+			});
+		});
+	}
 
 
 	var teamFade = anime({

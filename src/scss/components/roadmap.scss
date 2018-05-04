@@ -23,7 +23,7 @@
 	text-align: center;
 	.line{
 		position: absolute;
-		left: calc(50% - 1px);
+		left: calc(50% - 3px);
 		height: 100%;
 		width: 0px;
 		border: 2px dashed $blue;
@@ -59,26 +59,90 @@
 	width: 60px;
 }
 
-.point__description__title{
-	width: 190px;
-	border-radius: 20px;
-	background-image: linear-gradient(to right, #56ccf2 0%, #2f80ed 100%);
-	color: #ffffff;
-	font-size: 14px;
-	font-weight: 700;
-	padding: 10px 0;
-	box-sizing: border-box;
-	margin: 0 auto;
-	margin-top: 20px;
-	position: relative;
-	z-index: 2;
-	cursor: pointer;
+@media screen and (min-width: 768px) {
+	.roadmap__point{
+		margin: 38px;
+	}
+	.point__description{
+
+		&.active{
+			width: 368px;
+			border-radius: 20px;
+			border: 1px solid #00426e;
+			padding: 20px;
+			cursor: default;
+
+			background-image: none;
+			.point__description__title{
+				font-size: 18px;
+				color: $blue;
+			}
+			.point__description__text{
+				display: block;
+			}
+			&.left{
+				text-align: right;
+			}
+			&.right{
+				text-align: left;
+			}
+		}
+
+		.point__description__title{
+			color: #ffffff;
+			font-size: 14px;
+			font-weight: 700;
+		}
+		
+		position: absolute;
+		transition: 0.4s;
+		padding: 8px 0;
+		cursor: pointer;
+		width: 190px;
+		text-align: center;
+		border-radius: 20px;
+		background-image: linear-gradient(to right, #56ccf2 0%, #2f80ed 100%);
+
+		top: 50%;
+		transform: translateY(-50%);
+
+		.point__description__text{
+			display: none;
+		}
+
+		&.left{
+			right: calc(50% + 100px);
+		}
+		&.right{
+			left: calc(50% + 100px);
+		}
+	}
+	
 }
-.point__description__text{
-	background-color: #d1e6ff;
-	color: $main;
-	padding: 32px 12px 15px;
-	position: relative;
-	top: -18px;
-	display: none;
+@media screen and (max-width: 768px) {
+	
+	.point__description__title{
+		width: 190px;
+		border-radius: 20px;
+		background-image: linear-gradient(to right, #56ccf2 0%, #2f80ed 100%);
+		color: #ffffff;
+		font-size: 14px;
+		font-weight: 700;
+		padding: 10px 0;
+		box-sizing: border-box;
+		margin: 0 auto;
+		margin-top: 20px;
+		position: relative;
+		z-index: 2;
+		cursor: pointer;
+	}
+	.point__description__text{
+		box-shadow: inset 0px 12px 20px -10px rgba(0,0,0,.5);
+		background-color: #d1e6ff;
+		color: $main;
+		padding: 32px 12px 15px;
+		position: relative;
+		top: -18px;
+		display: none;
+	}
 }

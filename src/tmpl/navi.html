@@ -1,16 +1,16 @@
 <nav class="nav">
 	<div class="nav__logo">
-		<img src="img/logo_main.svg" alt="">
+		<a class="logo__home" href="#home"></a>
 	</div>
 	<div class="nav__links">
 		<a href="" class="nav__links__item --slack"></a>
-		<a href="" class="nav__links__item --wechat"></a>
+		<a href="#wechat" rel="modal:open" class="nav__links__item --wechat"></a>
 		<a href="" class="nav__links__item --medium"></a>
 		<a href="" class="nav__links__item --twitter"></a>
-		<a href="" class="nav__links__item --telegam"></a>
+		<a href="" class="nav__links__item --telegram"></a>
 		<a href="" class="nav__links__item --facebook"></a>
 		<a href="" class="nav__links__item --instagram"></a>
-		<a href="" class="nav__links__item --bitcoiontalk"></a>
+		<a href="" class="nav__links__item --bitcointalk"></a>
 		<a href="" class="nav__links__item --github"></a>
 		<a href="" class="nav__links__item --reddit"></a>
 	</div>
@@ -24,4 +24,33 @@
 	</ul>
 </nav>
 
+<div class="burger-ico">
+	<svg width="40px" height="28px" viewBox="0 0 40 28" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+	    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+	        <g id="Mobile" transform="translate(-266.000000, -14.000000)" fill="#000000" fill-rule="nonzero">
+	            <g id="menu" transform="translate(266.000000, 14.000000)">
+	                <path class="burger__path" d="M5.16981132,4 L33.8301887,4 C34.4759245,4 35,3.104 35,2 C35,0.896 34.4759245,0 33.8301887,0 L5.16981132,0 C4.52407547,0 4,0.896 4,2 C4,3.104 4.52407547,4 5.16981132,4 Z" id="Shape"></path>
+	                <path class="burger__path" d="M1.50943396,16 L38.490566,16 C39.3237736,16 40,15.104 40,14 C40,12.896 39.3237736,12 38.490566,12 L1.50943396,12 C0.676226415,12 0,12.896 0,14 C0,15.104 0.676226415,16 1.50943396,16 Z" id="Shape"></path>
+	                <path class="burger__path" d="M5.16981132,28 L33.8301887,28 C34.4759245,28 35,27.104 35,26 C35,24.896 34.4759245,24 33.8301887,24 L5.16981132,24 C4.52407547,24 4,24.896 4,26 C4,27.104 4.52407547,28 5.16981132,28 Z" id="Shape"></path>
+	            </g>
+	        </g>
+	    </g>
+	</svg>
+</div>
+
+<div class="nav__burger">
+	<ul class="burger__nav__list">
+		<li class="nav__item"><a href="#about">개요</a></li>
+		<li class="nav__item"><a href="#manual">작동방식</a></li>
+		<li class="nav__item"><a target="_blank" href="onplace_whitepaper_kor.pdf">백서</a></li>
+		<li class="nav__item"><a href="#team">팀</a></li>
+		<li class="nav__item"><a href="#roadmap">로드맵</a></li>
+		<li class="nav__item"><a id="" href="#footer">피드백</a></li>
+	</ul>
+	<div class="burger__switcher">
+		<div class="switch__lang">Enlish</div>
+		<a href="eng.html"><img src="img/switch_kor.svg" alt=""></a>
+		<div class="switch__lang">한국어</div>
+	</div>
+</div>
 <div class="talk"><img src="img/talk.png" alt="" class="talk__img"></div>
