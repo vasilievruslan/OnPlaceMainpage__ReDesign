@@ -1,9 +1,18 @@
 .manual{
 	@extend .wrapper;
 	text-align: center;
+	margin-top: 145px;
 	
 }
+.manual__title{
+	font-size: 45px;
+	margin-bottom: 12px;
+}
+.manual__subtitle {
+    margin-top: 14px;
+}
 .manual__container{
+	margin-top: 100px;
 	max-width: 100%;
 	box-sizing: border-box;
 	img{
@@ -11,7 +20,8 @@
 	}
 }
 .whitepapper__intro{
-	margin-top: 100px;
+	margin-top: 92px;
+	margin-bottom: 48px;
 	text-align: center;
 }
 .whitepapper__btn{
