@@ -53,3 +53,26 @@
 		display: none;
 	}
 }
+
+@media screen and (max-width: 425px) {
+	
+	.banner__korico{
+
+		img{
+			width: 84px;
+			height: auto;
+		}
+	}
+	.maintitle{
+		font-size: 33px;
+	}
+	.banner__subtitle{
+		font-size: 18px;
+
+		img{
+			margin-top: 20px;
+			width: 80px;
+			height: auto;
+		}
+	}
+}
