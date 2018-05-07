@@ -13,11 +13,6 @@ $(function() {
 
 	if (hasTouch()) { // remove all :hover stylesheets
 	    try { // prevent exception on browsers not supporting DOM styleSheets properly
-
-	     	$('.nav__logo').click(function(event) {
-	     		event.preventDefault();
-	     		$('.nav__list').toggleClass('active');
-	     	});
 		    for (var si in document.styleSheets) {
 		        var styleSheet = document.styleSheets[si];
 		        if (!styleSheet.rules) continue;
@@ -37,7 +32,6 @@ $(function() {
 	$('.burger-ico').click(function(event) {
 		$(this).toggleClass('active');
 		$('.nav__burger').toggleClass('active');
-
 	});
 
 	$('.carousel__slider').slick({
