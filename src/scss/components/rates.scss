@@ -1,0 +1,22 @@
+.rates{
+	margin-top: 100px;
+}
+.rates__container{
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+	justify-content: center;
+	margin: 0 auto;
+}
+.rates__item {
+    margin: 60px;
+
+    img{
+    	max-width: 100%;
+    }
+}
+@media screen and (max-width: 425px) {
+	.rates__item{
+		margin: 30px !important;
+	}
+}

@@ -25,14 +25,19 @@
 	
 	top: 0;
 	right: 25px;
-
 }
+.advosors__descriptions__item{
+	padding: 20px;
+	border: 1px solid $blue;
+	border-radius: 15px;
+}
+
 .advisor__name{
 	color: $blue;
 	margin-bottom: 20px;
 }
 .advisor__summary{
-	max-height: 270px;
+	max-height: 200px;
 	overflow-x: scroll;
 	&::-webkit-scrollbar-track{
 		-webkit-box-shadow: none;
