@@ -1,0 +1,11 @@
+RewriteEngine On 
+RewriteCond %{SERVER_PORT} 80
+RewriteCond %{HTTP_HOST} ^(www\.)?onplace\.kr
+RewriteRule ^(.*)$ https://www.onplace.kr/$1 [R,L]
+
+RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /([^.]+)\.html\ HTTP
+RewriteRule ^([^.]+)\.html$ http://onplace.kr/$1 [R=301,L]
+RewriteCond %{REQUEST_URI} !(\.[^./]+)$
+RewriteCond %{REQUEST_fileNAME} !-d
+RewriteCond %{REQUEST_fileNAME} !-f
+RewriteRule (.*) /$1.html [L]
