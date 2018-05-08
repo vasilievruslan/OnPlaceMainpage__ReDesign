@@ -1,6 +1,6 @@
 .banner{
 	width: 100vw;
-	height: 100vh;
+	min-height: 100vh;
 	background: url('../img/banner_background.jpg') left top no-repeat;
 	background-size: cover;
 	position: relative; 
@@ -24,6 +24,7 @@
 	}
 }
 .banner__content{
+	padding-top: 150px;
 	text-align: center;
 }
 .maintitle{
