@@ -76,6 +76,7 @@
 	margin: 6.8px;
 
 	background-image: url('../img/sprite.svg');
+	background-repeat: no-repeat;
 	background-size: cover;
 
 
@@ -85,32 +86,32 @@
 	background-position-x: 0;
 }
 .--wechat{
-	background-position-x: 440px;
+	background-position-x: -45px;
 }
 .--medium{
 	width: 42px;
-	background-position-x: 391px;
+	background-position-x: -90px;
 }
 .--twitter{
-	background-position-x: 338px;
+	background-position-x: -140px;
 }
 .--telegram{
-	background-position-x: 291px;
+	background-position-x: -183px;
 }
 .--facebook{
-	background-position-x: 242px;
+	background-position-x: -228px;
 }
 .--instagram{
-	background-position-x: 193px;
+	background-position-x: -274px;
 }
 .--bitcointalk{
-	background-position-x: 95px;
+	background-position-x: -320px;
 }
 .--github{
-	background-position-x: 143px;
+	background-position-x: -365px;
 }
 .--reddit{
-	background-position-x: 47px;
+	background-position-x: -410px;
 	width: 48px;
 }
 .subscribe__input{
