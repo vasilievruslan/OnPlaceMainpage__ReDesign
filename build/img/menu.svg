@@ -1,1 +1,16 @@
-<svg width="40" height="28" viewBox="0 0 40 28" xmlns="http://www.w3.org/2000/svg"><title>menu</title><g fill="#000" fill-rule="nonzero"><path d="M5.17 4h28.66C34.476 4 35 3.104 35 2s-.524-2-1.17-2H5.17C4.524 0 4 .896 4 2s.524 2 1.17 2zM1.51 16h36.98c.834 0 1.51-.896 1.51-2s-.676-2-1.51-2H1.51C.675 12 0 12.896 0 14s.676 2 1.51 2zM5.17 28h28.66c.646 0 1.17-.896 1.17-2s-.524-2-1.17-2H5.17C4.524 24 4 24.896 4 26s.524 2 1.17 2z"/></g></svg>
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="40px" height="28px" viewBox="0 0 40 28" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49 (51002) - http://www.bohemiancoding.com/sketch -->
+    <title>menu</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Mobile" transform="translate(-266.000000, -14.000000)" fill="#000000" fill-rule="nonzero">
+            <g id="menu" transform="translate(266.000000, 14.000000)">
+                <path d="M5.16981132,4 L33.8301887,4 C34.4759245,4 35,3.104 35,2 C35,0.896 34.4759245,0 33.8301887,0 L5.16981132,0 C4.52407547,0 4,0.896 4,2 C4,3.104 4.52407547,4 5.16981132,4 Z" id="Shape"></path>
+                <path d="M1.50943396,16 L38.490566,16 C39.3237736,16 40,15.104 40,14 C40,12.896 39.3237736,12 38.490566,12 L1.50943396,12 C0.676226415,12 0,12.896 0,14 C0,15.104 0.676226415,16 1.50943396,16 Z" id="Shape"></path>
+                <path d="M5.16981132,28 L33.8301887,28 C34.4759245,28 35,27.104 35,26 C35,24.896 34.4759245,24 33.8301887,24 L5.16981132,24 C4.52407547,24 4,24.896 4,26 C4,27.104 4.52407547,28 5.16981132,28 Z" id="Shape"></path>
+            </g>
+        </g>
+    </g>
+</svg>
