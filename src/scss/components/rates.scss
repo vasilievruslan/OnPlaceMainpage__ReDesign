@@ -1,3 +1,19 @@
+.op-banner{
+
+}
+
+.op-banner__container{
+	margin: 100px auto;
+	text-align: center;
+	img{
+		max-width: 100%;
+		height: auto;
+	}
+	.img__adaptive{
+		display: none;
+	}
+}
+
 .rates{
 	margin-top: 100px;
 }
@@ -19,4 +35,13 @@
 	.rates__item{
 		margin: 30px !important;
 	}
+
+	.op-banner__container{
+		.img__adaptive{
+			display: inline-block;
+		}
+		.img__desctop{
+			display: none;
+		}
+	}	
 }
