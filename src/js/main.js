@@ -11,6 +11,12 @@ function hasTouch() {
 
 $(function() {
 
+	$(document).ready(function($) {
+		setTimeout(function () {
+			$('.loader').fadeOut(600);
+		}, 1500);
+	});
+
 	if (hasTouch()) { // remove all :hover stylesheets
 	    try { // prevent exception on browsers not supporting DOM styleSheets properly
 		    for (var si in document.styleSheets) {
