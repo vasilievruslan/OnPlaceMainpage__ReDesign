@@ -1,7 +1,7 @@
 .nav{
 	position: fixed;
 	display: flex;
-	top: 88px;
+	top: 50px;
 	left: 0;
 	z-index: 4;
 	*{
@@ -10,8 +10,8 @@
 
 }
 .nav__logo{
-	width: 120px;
-	height: 120px;
+	width: 100px;
+	height: 100px;
 	box-sizing: border-box;
 	padding: 19px;
 	background-color: $blue;
@@ -19,12 +19,12 @@
 .logo__home{
 	transition: 0.3s ease-in-out;
 	display: block;
-	width: 78px;
-	height: 78px;
+	width: 60px;
+	height: 60px;
 	background:transparent url('../img/logo_main.svg') left top no-repeat;
 	background-size: cover;
 	&:hover{
-		background-position-x: -98px;
+		background-position-x: -77px;
 	}
 }
 .nav__list{
@@ -32,6 +32,7 @@
 	margin: 0;
 	padding-left: 30px;
 	font-weight: 600;
+	font-size: 12px;
 	a{
 		text-decoration: none;
 		color: $main;
