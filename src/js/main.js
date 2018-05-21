@@ -34,6 +34,9 @@ $(function() {
 	    } catch (ex) {}
 	}
 
+	// $('#wechat').modal({
+	//   fadeDuration: 100
+	// });
 
 	$('.burger-ico').click(function(event) {
 		$(this).toggleClass('active');
@@ -67,10 +70,15 @@ $(function() {
 		nextArrow: $('.next-arr')
 	});
 
+	$('#presale-banner').modal({
+		fadeDuration: 1000,
+		fadeDelay: 0.50
+	})
 
 	$('a[href*="#"]')
     .not('[href="#"]')
     .not('[href="#0"]')
+    .not('[rel="modal:open"]')
     .click(function(event) {
         if (
             location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') &&

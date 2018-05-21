@@ -37,7 +37,7 @@
 }
 .roadmap__point{
 	position: relative;
-	z-index: 2;
+	z-index: 1;
 	margin-top: 20px;
 	&:first-child{
 		margin-top: 0;
@@ -52,7 +52,7 @@
 	height: 92px;
 	margin: 0 auto;
 	position: relative;
-	z-index: 2;
+	z-index: 1;
 	background:transparent url('../img/roadmap-point.svg') left top no-repeat;
 	background-size: contain;
 
@@ -138,7 +138,7 @@
 		margin: 0 auto;
 		margin-top: 20px;
 		position: relative;
-		z-index: 2;
+		z-index: 1;
 		cursor: pointer;
 	}
 	.point__description__text{
