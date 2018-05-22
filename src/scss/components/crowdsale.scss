@@ -1,0 +1,68 @@
+.crowdsale{
+	background:transparent url('../img/crowdsale__background.jpg') left top no-repeat;
+	background-size: cover;
+	padding-top: 1px;
+	min-height: 100vh;
+	font-weight: 600;
+	font-size: 20px;
+	p{
+		font-family: 'Nanum Gothic', sans-serif;
+		padding: 0;
+	}
+
+}
+.header__logo{
+	position: absolute;
+	top: 0;
+	left: 10%
+}
+.crowdsale__content{
+	display: flex;
+	width: 1200px;
+	max-width: 90vw;
+	margin: 0 auto;
+	justify-content: space-between;
+	align-items: center;
+	margin-top: 150px;
+}
+.crowdsale__calculator{
+	width: 780px;
+	max-width: 100%;
+
+	a{
+		color: $main;
+		text-decoration: none;
+	}
+}
+.calculator{
+	display: flex;
+	align-items: center;
+	text-align: center;
+	.inp__name{
+		font-size: 24px;
+		font-weight: bold;
+		text-transform: uppercase;
+		margin-bottom: 10px;
+	}
+	input{
+		width: 228px;
+		box-sizing: border-box;
+		padding: 10px 20px;
+		font-size: 24px;
+		background: transparent;
+		box-shadow: none;
+		border: 2px solid $main;
+		border-radius: 10px;
+	}
+	img{
+		margin: 50px 35px 20px;
+	}
+
+}
+.crowdsale__btns{
+	margin-top: 50px;
+	text-align: right;
+}
+.btn__crowdsale{
+	font-family: 'Nanum Gothic', sans-serif;
+}
