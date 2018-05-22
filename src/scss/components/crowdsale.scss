@@ -2,6 +2,7 @@
 	background:transparent url('../img/crowdsale__background.jpg') left top no-repeat;
 	background-size: cover;
 	padding-top: 1px;
+	padding-bottom: 30px;
 	min-height: 100vh;
 	font-weight: 600;
 	font-size: 20px;
@@ -10,6 +11,12 @@
 		padding: 0;
 	}
 
+}
+.crowdsale__title{
+	text-align: left;
+	width: 700px;
+	max-width: 90vw;
+	margin: 40px auto;
 }
 .header__logo{
 	position: absolute;
@@ -21,6 +28,7 @@
 	width: 1200px;
 	max-width: 90vw;
 	margin: 0 auto;
+	flex-wrap: wrap;
 	justify-content: space-between;
 	align-items: center;
 	margin-top: 150px;
@@ -37,6 +45,7 @@
 .calculator{
 	display: flex;
 	align-items: center;
+	flex-wrap: wrap;
 	text-align: center;
 	.inp__name{
 		font-size: 24px;
@@ -59,10 +68,53 @@
 	}
 
 }
+
+.eth-address{
+	word-wrap: break-word;
+}
 .crowdsale__btns{
 	margin-top: 50px;
 	text-align: right;
+	.btn__crowdsale{
+		font-family: 'Nanum Gothic', sans-serif;
+		display: inline-block;
+		background-color: $blue;
+		padding: 12px 95px;
+		color: #fff;
+		border-radius: 10px;
+	}
 }
-.btn__crowdsale{
-	font-family: 'Nanum Gothic', sans-serif;
+@media screen and (max-width: 1200px) {
+	.header__logo{
+		left: auto;
+		right: 10%;
+	}
+	.crowdsale__logo__cube{
+		display: block;
+		margin: 0 auto 40px;
+		order: 1;
+	}
+	.crowdsale__calculator{
+		order: 2;
+	}
+}
+@media screen and (max-width: 768px) {
+	.crowdsale__logo__cube{
+		display: none;
+	}
+}
+@media screen and (max-width: 425px) {
+	.header__logo{
+		right: 0;
+	}
+	.calculator{
+		justify-content: space-around;
+		.revers{
+			margin: 50px;
+		}
+	}
+	.calc-inp{
+		flex-grow: 2;
+		width: 100%;
+	}
 }

@@ -99,27 +99,36 @@ $(function() {
         }
     });
 
+    try {
+		$(window).scroll(function () {
+			var st = $(this).scrollTop();
+			var team = $('.team__container').offset().top - $(window).height() / 1.5;
 
-	$(window).scroll(function () {
-		var st = $(this).scrollTop();
-		var team = $('.team__container').offset().top - $(window).height() / 1.5;
+			// var roadmap = $('.roadmap').offset().top - $(window).height() / 1.5;
 
-		// var roadmap = $('.roadmap').offset().top - $(window).height() / 1.5;
+			// if (st > roadmap && ) {
+			// 	$('.line').height(st + 500 - $('.line').offset().top)
+			// }
 
-		// if (st > roadmap && ) {
-		// 	$('.line').height(st + 500 - $('.line').offset().top)
-		// }
+			if (st > team) {			
+				teamFade.play();
+			}
 
-		if (st > team) {			
-			teamFade.play();
-		}
+			if($(window).width() > 768){
+				$('.content').css({
+					backgroundPositionY: (st - 3000) * 0.5,
+				});	
+			}
+		})
+    } catch(e) {
+    	// statements
+    }
+    var price = 0.125223
 
-		if($(window).width() > 768){
-			$('.content').css({
-				backgroundPositionY: (st - 3000) * 0.5,
-			});	
-		}
-	})
+	$('#eth').keyup(function(event) {
+		var res = parseFloat($('#eth').val()) / price
+		$('#opl').val(res.toFixed(2))
+	});
 
 	$('.advosors__descriptions__item').not('[data-advisor-id="0"]').hide();
 	$('.advisor-pic').click(function(e){
