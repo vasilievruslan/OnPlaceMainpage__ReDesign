@@ -70,11 +70,6 @@ $(function() {
 		nextArrow: $('.next-arr')
 	});
 
-	$('#presale-banner').modal({
-		fadeDuration: 1000,
-		fadeDelay: 0.50
-	})
-
 	$('a[href*="#"]')
     .not('[href="#"]')
     .not('[href="#0"]')
@@ -166,33 +161,5 @@ $(function() {
 		$('.nav__links').slideToggle(400);
 
 	});
-
-	// function validateEmail(email) {
-	// 	var re = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-	// 		return re.test(email);
-	// 	}
-
-	// $.get('https://api.telegram.org/bot542094442:AAFyvENP47ULWOKNCo7DJX2RPmpu-AhsSu8/getUpdates', function(data) {
-	// 	console.log(data);
-	// });
-	// function validate() {
-	// 	var email = $(".subscribe__input").val();
-
-	// 	if (validateEmail(email)) {
-	// 		$.post('https://api.telegram.org/bot542094442:AAFyvENP47ULWOKNCo7DJX2RPmpu-AhsSu8/sendMessage?chat_id=-315434931&text='+ 'onPlace Korean; email: ' + $('.subscribe__input').val() + ';', function(data, textStatus, xhr) {
-	// 		}).done(function () {
-	// 			$('.subscribe__input').val('').attr('disabled', '');
-	// 			alert('Thank you!')
-	// 		});
-	// 	} else {
-	// 		alert(email + " is not valid email");
-	// 	}
-	// 	return false;
-	// }
-
-	// $(".subscribe__btn").click(function(e){
-	// 	e.preventDefault();
-	// 	validate()
-	// });
 
 })
