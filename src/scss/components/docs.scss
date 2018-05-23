@@ -1,8 +1,80 @@
-.docs{
-	display: none;
+.cycle__content__text{
+	margin: 30px 0;
+}
+@media screen and (min-width: 500px) {
+	.features{
+		display: flex;
+		text-align: center;
+		margin: 0 auto;
+		max-width: 1200px;
+		justify-content: space-around;
+		margin-top: 120px;
+	}
+	.features__item{
+		max-width: 400px;
+		margin: 30px;
+	}
+	.competition{
+		max-width: 1200px;
+		margin: 150px auto 0;
+	}
+	.competition__tittle{
+		text-align: center;
+	}
+	.parameters__container{
+		display: flex;
+		align-items: center;
+		max-width: 1200px;
+		margin: 0 auto;
+		flex-wrap: wrap;
+		justify-content: space-around;
+		margin-top: 40px;
+	}
+	.parameters__text{
+		max-width: 400px;
+		margin: 30px 0px;
+	}
+	.cycle{
+		max-width: 1200px;
+		margin: 150px auto 0;
+	}
+	.cycle__title{
+		text-align: center;
+	}
+	.cycle__content{
+		display: flex;
+		justify-content: space-around;
+		flex-wrap: wrap;
+		flex-shrink: 1;
+	}
+	.cycle__img__desctop{
+		max-width: 700px;
+	}
+	.cycle__content__text{
+		width: 400px;
+		margin: 85px 0px;
+		div{
+			text-indent: 20px;
+		}
+	}
+
+
+	.competition__title__img,
+	.vs,
+	.parameters__mob,
+	.cycle__img{
+		display: none;
+	}
+	
 }
 
+
+
 @media screen and (max-width: 500px) {
+	.parameters__desctop,
+	.cycle__img__desctop{
+		display: none;
+	}
 	.docs{
 		display: block;
 	}
@@ -25,6 +97,7 @@
 	}
 	.competition__tittle{
 		font-size: 30px;
+		padding: 0px 20px;
 	}
 	.competition__title__img{
 		margin: 40px 0 30px;
