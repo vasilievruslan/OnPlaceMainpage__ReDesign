@@ -99,6 +99,7 @@ $(function() {
         }
     });
 
+
     try {
 		$(window).scroll(function () {
 			var st = $(this).scrollTop();
@@ -156,6 +157,33 @@ $(function() {
 		});
 	}
 
+	// Tokens Animation Ripple
+	
+	var logos = document.querySelectorAll('.token-anim')
+	var anims = [];
+
+	for (var i = logos.length - 1; i >= 0; i--) {
+		anims[i] = anime({
+			targets: logos[i],
+			easing: 'linear',
+			scale: 0.9,
+			loop: true,
+			direction: 'alternate',
+			duration: 1000,
+			autoplay: false,
+		})
+		console.log(anims)
+	}
+
+	var itr = 0;
+	var tokenAnim = setInterval(function(){
+		if (itr < logos.length) {
+			anims[itr].play();
+			itr++;
+		}else{
+			clearInterval(tokenAnim);
+		}
+	}, 470)
 
 	var teamFade = anime({
 		targets: '.team__item',
@@ -168,7 +196,6 @@ $(function() {
 	$('#feedback').click(function(event) {
 		event.preventDefault()
 		$('.nav__links').slideToggle(400);
-
 	});
 
 })
