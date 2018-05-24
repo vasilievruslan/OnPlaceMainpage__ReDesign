@@ -124,7 +124,7 @@ $(function() {
     } catch(e) {
     	// statements
     }
-    var price = 0.125223
+    var price = 0.000109891
 
 	$('#eth').keyup(function(event) {
 		var res = parseFloat($('#eth').val()) / price
