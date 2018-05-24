@@ -158,7 +158,7 @@ $(function() {
 	}
 
 	// Tokens Animation Ripple
-	
+
 	var logos = document.querySelectorAll('.token-anim')
 	var anims = [];
 
@@ -172,7 +172,6 @@ $(function() {
 			duration: 1000,
 			autoplay: false,
 		})
-		console.log(anims)
 	}
 
 	var itr = 0;
