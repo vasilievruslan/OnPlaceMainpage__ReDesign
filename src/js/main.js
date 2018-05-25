@@ -1,6 +1,7 @@
 'use strict'
 //= anime.min.js
 //= slick.js
+//= parallax.min.js
 
 
 function hasTouch() {
@@ -115,15 +116,18 @@ $(function() {
 				teamFade.play();
 			}
 
-			if($(window).width() > 768){
-				$('.content').css({
-					backgroundPositionY: (st - 3000) * 0.5,
-				});	
-			}
+			// if($(window).width() > 768){
+			// 	$('.content').css({
+			// 		backgroundPositionY: (st - 3000) * 0.5,
+			// 	});	
+			// }
 		})
     } catch(e) {
     	// statements
     }
+
+
+    $('.content').parallax({imageSrc: '../img/background__cycles.png'});
     var price = 0.000109891
 
 	$('#eth').keyup(function(event) {
