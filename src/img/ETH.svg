@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="40px" height="40px" viewBox="0 0 40 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49 (51002) - http://www.bohemiancoding.com/sketch -->
+    <title>ETH</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="NEW-Crowd-Sale" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Korea-page-CROWSALE" transform="translate(-360.000000, -640.000000)" fill-rule="nonzero">
+            <g id="ETH" transform="translate(360.000000, 640.000000)">
+                <path d="M39.9826468,20.0987861 C39.9826468,31.0896318 31.072995,39.9992836 20.0821493,39.9992836 C9.09150249,39.9992836 0.181651741,31.0896318 0.181651741,20.0987861 C0.181651741,9.1079403 9.09150249,0.198288557 20.0821493,0.198288557 C31.072995,0.198288557 39.9826468,9.1079403 39.9826468,20.0987861" id="Fill-506" fill="#497391"></path>
+                <polygon id="Fill-507" fill="#FFFFFF" points="11.2707463 22.5645771 19.8064677 4.98189055 19.8064677 27.0577114"></polygon>
+                <polygon id="Fill-508" fill="#FFFFFF" points="28.8938706 22.5645771 20.3279005 27.0577114 20.3279005 4.9759204"></polygon>
+                <polygon id="Fill-509" fill="#FFFFFF" points="11.2707463 23.2077612 19.8064677 27.481592 19.8064677 34.3540299"></polygon>
+                <polygon id="Fill-510" fill="#FFFFFF" points="28.8938706 23.2077612 20.3279005 34.3540299 20.3279005 27.481592"></polygon>
+            </g>
+        </g>
+    </g>
+</svg>

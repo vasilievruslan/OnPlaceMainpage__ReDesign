@@ -1,5 +1,5 @@
 .crowdsale{
-	background:transparent url('../img/crowdsale__background.jpg') left top no-repeat;
+	background:transparent url('../img/background-crowdsale.png') left top no-repeat;
 	background-size: cover;
 	padding-top: 1px;
 	padding-bottom: 30px;
@@ -12,6 +12,13 @@
 	}
 
 }
+.crowdsale__header{
+	display: flex;
+	flex-wrap: wrap;
+	max-width: 1200px;
+	margin: 0 auto;
+
+}
 .crowdsale__title{
 	text-align: left;
 	width: 700px;
@@ -19,9 +26,7 @@
 	margin: 40px auto;
 }
 .header__logo{
-	position: absolute;
-	top: 0;
-	left: 10%
+	
 }
 .crowdsale__content{
 	display: flex;
@@ -34,7 +39,7 @@
 	margin-top: 150px;
 }
 .crowdsale__calculator{
-	width: 780px;
+	width: 645px;
 	max-width: 100%;
 
 	a{
@@ -69,8 +74,65 @@
 
 }
 
-.eth-address{
-	word-wrap: break-word;
+.crowdsale__media__links{
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+}
+.crowdsale__media__links__item{
+	width: 51px !important;
+	height: 51px !important;
+	background-image: url(../img/media-sprite.svg);
+	background-repeat: no-repeat;
+	background-position-x: 0 !important;
+	margin: 10px;
+	&.--kakao{
+		background-position-y: 0;
+	}
+	&.--reddit{
+		background-position-y: -70px;
+	}
+	&.--github{
+		background-position-y: -140px;
+	}
+	&.--bitcointalk{
+		background-position-y: -210px;
+	}
+	&.--instagram{
+		background-position-y: -280px;
+	}
+	&.--facebook{
+		background-position-y: -350px;
+	}
+	&.--telegram{
+		background-position-y: -420px;
+	}
+	&.--medium{
+		background-position-y: -490px;
+	}
+	&.--twitter{
+		background-position-y: -560px;
+	}
+	&.--wechat{
+		background-position-y: -630px;
+	}
+	&.--slack{
+		background-position-y: -700px;
+	}
+}
+
+.crowdsale__address{
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+	max-width: 100%;
+	word-break: break-word;
+	.lgoo{
+		margin: 10px;
+	}
+	.address{
+		word-break: break-word;
+	}
 }
 .crowdsale__btns{
 	margin-top: 50px;
@@ -84,26 +146,47 @@
 		border-radius: 10px;
 	}
 }
+.break{
+	word-wrap: break-word;
+}
 @media screen and (max-width: 1200px) {
 	.header__logo{
 		left: auto;
 		right: 10%;
 	}
-	.crowdsale__logo__cube{
-		display: block;
-		margin: 0 auto 40px;
-		order: 1;
-	}
-	.crowdsale__calculator{
-		order: 2;
-	}
-}
-@media screen and (max-width: 768px) {
+	// .crowdsale__logo__cube{
+	// 	display: block;
+	// 	margin: 0 auto 40px;
+	// 	order: 1;
+	// }
+	// .crowdsale__calculator{
+	// 	order: 2;
+	// }
 	.crowdsale__logo__cube{
 		display: none;
 	}
+	.crowdsale__content{
+		text-align: center;
+	}
+}
+@media screen and (max-width: 768px) {
+	.crowdsale__media__links{
+		flex-direction: row;
+		justify-content: center;
+	}
+	.calculator{
+		justify-content: space-around;
+	}
+	.crowdsale__address{
+		flex-direction: column;
+		justify-content: space-around;
+	}
+
 }
 @media screen and (max-width: 425px) {
+	.crowdsale__content{
+		margin-top: 50px;
+	}
 	.header__logo{
 		right: 0;
 	}
