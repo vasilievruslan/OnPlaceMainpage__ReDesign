@@ -127,7 +127,10 @@ $(function() {
     }
 
 
-    $('.content').parallax({imageSrc: '../img/background__cycles.png'});
+    $('.content').parallax({
+    	imageSrc: '../img/background__cycles.png',
+		speed: 0.5,
+	});
     var price = 0.000109891
 
 	$('#eth').keyup(function(event) {
