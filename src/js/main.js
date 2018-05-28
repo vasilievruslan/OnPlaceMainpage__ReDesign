@@ -2,6 +2,7 @@
 //= anime.min.js
 //= slick.js
 //= parallax.min.js
+//= aos.js
 
 
 function hasTouch() {
@@ -11,6 +12,8 @@ function hasTouch() {
 }
 
 $(function() {
+
+	AOS.init();
 
 	$(document).ready(function($) {
 		setTimeout(function () {
@@ -112,9 +115,9 @@ $(function() {
 			// 	$('.line').height(st + 500 - $('.line').offset().top)
 			// }
 
-			if (st > team) {			
-				teamFade.play();
-			}
+			// if (st > team) {			
+			// 	teamFade.play();
+			// }
 
 			// if($(window).width() > 768){
 			// 	$('.content').css({
@@ -191,14 +194,14 @@ $(function() {
 		}
 	}, 470)
 
-	var teamFade = anime({
-		targets: '.team__item',
-		delay: function(el, i, l) { return i * 100; },
-		opacity: 1,
-    	easing: 'easeOutExpo',
-    	autoplay: false,
+	// var teamFade = anime({
+	// 	targets: '.team__item',
+	// 	delay: function(el, i, l) { return i * 100; },
+	// 	opacity: 1,
+ //    	easing: 'easeOutExpo',
+ //    	autoplay: false,
 
-	})
+	// })
 	$('#feedback').click(function(event) {
 		event.preventDefault()
 		$('.nav__links').slideToggle(400);
